@@ -1,12 +1,15 @@
 package instructions;
 
-import app.Interpreter;
-
 public class Push implements Instruction {
+	private int value;
+	public Push(int value) {
+		this.value=value;
+	}
 
 	@Override
 	public void execute(Interpreter interpreter) {
-		//TODO
+		 interpreter.push(value);
+		 interpreter.incrementIp();
 	}
 
 }
