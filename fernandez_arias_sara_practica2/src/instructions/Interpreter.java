@@ -23,11 +23,11 @@ public class Interpreter {
 	private static int[] stack = new int[32];
 	private static int sp = 0;
 
-	public int getMemoryAddress(int address) {
+	  int getMemoryAddress(int address) {
 		return memory[address];
 	}
 
-	public void storeInMemory(int address, int content) {
+	  void storeInMemory(int address, int content) {
 		memory[address] = content;
 	}
 
