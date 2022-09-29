@@ -1,6 +1,6 @@
 package instructions;
 
-public class Load implements Instruction {
+public class Load extends AbstractInstruction {
 
 	@Override
 	public void execute(Interpreter interpreter) {
