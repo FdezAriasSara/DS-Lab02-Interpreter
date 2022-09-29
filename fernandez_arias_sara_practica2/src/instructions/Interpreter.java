@@ -66,9 +66,7 @@ public class Interpreter {
 		case PUSH:
 			instructions.add(new Push(Integer.parseInt(tokens[1])));
 			break;
-		case POP:
-			instructions.add(new Pop());
-			break;
+		
 		case INPUT:
 			instructions.add(new Input());
 			break;

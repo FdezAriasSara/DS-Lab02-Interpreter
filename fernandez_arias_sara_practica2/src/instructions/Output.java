@@ -1,11 +1,11 @@
 package instructions;
 
-public class Output implements Instruction {
+public class Output extends AbstractInstruction {
 
 	@Override
-	public void execute(Interpreter interpreter) {
+	public void run(Interpreter interpreter) {
 		System.out.println(	interpreter.pop());
-		interpreter.incrementIp();
+
 
 	}
 

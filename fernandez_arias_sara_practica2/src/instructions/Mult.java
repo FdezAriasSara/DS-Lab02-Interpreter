@@ -1,14 +1,13 @@
 package instructions;
 
-public class Mult implements Instruction {
+public class Mult extends AbstractInstruction {
 
 	@Override
-	public void execute(Interpreter interpreter) {
+	public void run(Interpreter interpreter) {
 		int b = interpreter.pop();
 		int a = interpreter.pop();
 		interpreter.push(a * b);
-		interpreter.incrementIp();
-
+	
 	}
 
 }

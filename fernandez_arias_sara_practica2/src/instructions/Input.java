@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Input extends AbstractInstruction {
 
-	
+	@Override
 	public void run(Interpreter interpreter) {
 		System.out.println("Escriba un entero:");
 		interpreter.push(readValue());

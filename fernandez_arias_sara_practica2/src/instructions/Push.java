@@ -1,15 +1,15 @@
 package instructions;
 
-public class Push implements Instruction {
+public class Push extends AbstractInstruction {
 	private int value;
 	public Push(int value) {
 		this.value=value;
 	}
 
 	@Override
-	public void execute(Interpreter interpreter) {
+	public void run(Interpreter interpreter) {
 		 interpreter.push(value);
-		 interpreter.incrementIp();
+		
 	}
 
 }

@@ -1,13 +1,13 @@
 package instructions;
 
-public class Store implements Instruction {
+public class Store extends AbstractInstruction{
 
 	@Override
-	public void execute(Interpreter interpreter) {
+	public void run(Interpreter interpreter) {
 		int value = interpreter.pop();
 		int address = interpreter.pop();
 		interpreter.storeInMemory(address,value);
-		interpreter.incrementIp();
+		
 
 	}
 
